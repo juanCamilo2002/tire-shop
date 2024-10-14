@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Llantas</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Encabezado -->
+    <header class="bg-gray-800 text-white">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold">Tienda de Llantas</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#inicio" class="hover:text-yellow-500">Inicio</a></li>
+                    <li><a href="#productos" class="hover:text-yellow-500">Productos</a></li>
+                    <li><a href="#contacto" class="hover:text-yellow-500">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner principal -->
+    <section id="inicio" class="bg-cover bg-center h-64" style="background-image: url('./images/portada.jpg');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <h2 class="text-4xl text-white font-bold">¡Las mejores llantas para tu vehículo!</h2>
+        </div>
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="productos" class="container mx-auto p-4">
+        <h3 class="text-3xl font-bold text-center mb-6">Nuestros Productos</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Producto 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="./images/todoterreno.jpg" alt="Llantas 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-xl font-bold">Llantas Todo Terreno</h4>
+                    <p class="text-gray-700 mt-2">Ideal para caminos difíciles y terrenos accidentados.</p>
+                    <p class="text-yellow-500 font-bold mt-2">$120.00</p>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="./images/alatvelocidad.jpg" alt="Llantas 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-xl font-bold">Llantas de Alta Velocidad</h4>
+                    <p class="text-gray-700 mt-2">Diseñadas para un mejor rendimiento en carretera.</p>
+                    <p class="text-yellow-500 font-bold mt-2">$150.00</p>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="./images/Llantas economicas.webp" alt="Llantas 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-xl font-bold">Llantas Económicas</h4>
+                    <p class="text-gray-700 mt-2">Calidad y buen precio para todos los vehículos.</p>
+                    <p class="text-yellow-500 font-bold mt-2">$90.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold text-center mb-6">Contáctanos</h3>
+            <form action="#" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm">Nombre</label>
+                    <input type="text" id="name" class="w-full p-2 rounded text-gray-900" placeholder="Tu nombre">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm">Correo Electrónico</label>
+                    <input type="email" id="email" class="w-full p-2 rounded text-gray-900" placeholder="Tu correo electrónico">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm">Mensaje</label>
+                    <textarea id="message" class="w-full p-2 rounded text-gray-900" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                <button type="submit" class="bg-yellow-500 text-gray-900 py-2 px-4 rounded hover:bg-yellow-600">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-900 text-gray-400 p-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Tienda de Llantas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
